@@ -1,3 +1,7 @@
-const connection = require('./connection')
+/*
+const connection =  require('./connection');
 
-module.exports = orm
+let orm = {
+}
+module.exports = orm;
+*/
