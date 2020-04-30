@@ -1,5 +1,3 @@
-/* create jquery 
 $(function () {
-  ;
+  $('.join-gameroom')
 })
-*/
