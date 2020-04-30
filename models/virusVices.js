@@ -6,3 +6,4 @@ const virus = {
 
 // Export
 module.exports = virus
+
