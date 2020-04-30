@@ -1,7 +1,7 @@
-const express =  require('express');
-var router = express.Router();
+const express = require('express')
+var router = express.Router()
 
-const virus = require('../models/virusVices');
+// const virus = require('../models/virusVices')
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {

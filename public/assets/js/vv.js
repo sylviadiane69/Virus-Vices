@@ -1,3 +1,5 @@
-$(function() {
-    ;
-  });
+/* create jquery 
+$(function () {
+  ;
+})
+*/
