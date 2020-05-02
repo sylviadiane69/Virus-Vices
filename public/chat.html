@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+            integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+                    <script src="https://code.jquery.com/jquery.js"></script>
+
+        <link rel="stylesheet" href="css/style.css">
+                <!-- <link rel="stylesheet" href="/css/style.css" media="screen"> -->
+
+        <title>Chat App</title>
+    </head>
+
+    <body>
+        <div class="chat-container">
+            <header class="chat-header">
+                <h1><i class="fas fa-smile"></i> Chat App</h1>
+                <a href="index.html" class="btn">Leave Room</a>
+            </header>
+            <main class="chat-main">
+                <div class="chat-sidebar">
+                    <h3><i class="fas fa-comments"></i> Room Name:</h3>
+                    <h2 id="room-name"></h2>
+                    <h3><i class="fas fa-users"></i> Users</h3>
+                    <ul id="users">
+
+                    </ul>
+                    <h3 class="card-stuff"></h3>
+                </div>
+                <div class="chat-messages">
+                    
+                </div>
+            </main>
+            <div class="chat-form-container">
+                <form id="chat-form">
+                    <input id="msg" type="text" placeholder="Enter Message" required autocomplete="off" />
+                    <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="game-container">
+                <!-- NAV BAR -->
+                <div class="navbar navbar-inverse">
+                    <button id="new-game">New Game</button>
+                    <!-- <button id="rando-cardrissian">Rando Cardrissian</button> -->
+                    <div id="header">Cards Against Humanity</div>
+                </div>
+                
+                <div class="welcome">
+                    <div class="welcome-wrapper">
+                        <div id="title">Cards </br>Against</br>Humanity</div> </br>
+                        <div id="subtitle">A party game for horrible people</div>
+                        <!-- <div id="instructions">
+                            <h5>Rules</h5>
+                            <p id="welcome-list">
+                            • Card Czar chooses Black Card and reads it aloud.</br></br>
+                            • Players select best matching card from their deck of random white cards. </br></br>
+                            • Card Czar picks the funniest play and player is awarded an Awesome Point.</br></br>
+                            • Highest score wins.</br></br>
+                            • GAMBLING: Bet one of your Awesome Points by playing an additional white card.</br></br>
+                            • You should be drinking.  But play anyway.</br></br>
+                            </p>
+                      </div> -->
+                
+                        <div id="start-wrapper">
+                            <button id="start">Start</button>
+                        </div>
+                
+                
+                    </div>
+                
+                </div>
+                
+                <!-- CONTAINER -->
+                <div class="container">
+                
+                
+                    <!--Card Czar-->
+                    <div class="player-card card-czar">
+                        <div class="black-cards player-black"> </div>
+                        <div id="you-are-czar">you are the Card Czar</div>
+                        <div id="pick-a-card">select a card to be the winner</div>
+                        <div class="card-container">
+
+                        </div>
+                
+                    </div>
+                
+                    <!-- Player One -->
+                    <div class="player-card">
+                        <div class="player-black"> </div>
+                        <div class="player-one"></div>
+                
+                
+                        <!-- GAMBLE -->
+                        <div id="bottom-wrapper">
+                            <div class="awesome-score-one"></div>
+                            <button id="gamble-one">Gamble</button>
+                        </div>
+                
+                    </div>
+                
+                    <!-- Player Two -->
+                    <div class="player-card">
+                        <div class="player-black"> </div>
+                        <div class="player-two"></div>
+                
+                
+                        <!-- GAMBLE -->
+                        <div id="bottom-wrapper">
+                            <div class="awesome-score-two"></div>
+                            <button id="gamble-two">Gamble</button>
+                        </div>
+                
+                    </div>
+                
+                
+                </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+            crossorigin="anonymous"></script>
+<!-- Get access to query string library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.3/qs.min.js"
+            integrity="sha256-lSPkSu/D04IeqWOhTgTf5tLzNFEc37oNE9ysGS9PdK4=" crossorigin="anonymous"></script>
+   
+        <!-- Allows the ability to use io method -->
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/main.js"></script>
+                         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+                    <script type="text/javascript" src="/js/game.js"></script>
+                    <script type="text/javascript" src="/js/player.js"></script>
+                    <script type="text/javascript" src="/js/index.js"></script>
+    </body>
+
+</html>

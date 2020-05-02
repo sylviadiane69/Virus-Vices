@@ -1,39 +1,24 @@
 {
-  "name": "improved-project2",
+  "name": "practice2",
   "version": "1.0.0",
-  "description": "something",
+  "description": "",
   "main": "server.js",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^4.0.3",
+    "express-handlebars": "^4.0.4",
+    "handlebars": "^4.7.6",
+    "moment": "^2.24.0",
     "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "nodemon": "^2.0.3",
     "sequelize": "^5.21.7",
-    "shuffle": "^0.2.2"
+    "socket.io": "^2.3.0"
   },
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "nodemon": "^2.0.3"
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "lint": "eslint .",
-    "dev": "nodemon server.js"
+    "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ericvasquez/improved-project2.git"
-  },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ericvasquez/improved-project2/issues"
-  },
-  "homepage": "https://github.com/ericvasquez/improved-project2#readme"
+  "license": "ISC"
 }
