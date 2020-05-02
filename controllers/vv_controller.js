@@ -2,7 +2,7 @@ const express = require('express')
 var router = express.Router()
 
 // const virus = require('../models/virusVices')
-const orm = require('../config/orm');
+const orm = require('../config/orm')
 
 router.get('/', (req, res) => {
   res.render('home')
