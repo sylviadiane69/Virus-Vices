@@ -1,0 +1,25 @@
+.card {
+    background-image: url(" ");
+    border-color: #808080 #000000 #000000 #808080;
+    border-width: 1px;
+    border-style: solid;
+    color: #000000;
+    font-size: 20pt;
+    position: absolute;
+    width:  3.75em;
+    height: 5.00em;
+  }
+  .front {
+    background-color: black;
+    color: #000000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  ...
+  <div class="card">
+    <div class="front"></div>
+  </div>
+  <div class="card">
+    <div class="front" style="visibility:hidden;"></div>
+  </div>
